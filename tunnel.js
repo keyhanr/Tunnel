@@ -109,7 +109,7 @@ setDK(document.getElementById('dkS').value);
 setR(document.getElementById('rS').value);
 setFollow();
 
-function road() {
+function tunnel() {
 	console.log(l.length);
 	amount += 0.00;
     if (amount > 1) {
@@ -141,7 +141,7 @@ function road() {
 	}
 }
 
-var interval = setInterval(road, animS);
+var interval = setInterval(tunnel, animS);
 
 function pause () {
 	if (!paused) {
@@ -150,7 +150,7 @@ function pause () {
 	}
 	else {
 		paused = false;
-		interval = setInterval(road, animS);
+		interval = setInterval(tunnel, animS);
 	}
 }
 
